@@ -1,17 +1,35 @@
 {
-  "name": "jdjemba-me",
-  "type": "module",
-  "version": "0.0.1",
-  "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
-    "build": "astro check && astro build",
-    "preview": "astro preview",
-    "astro": "astro"
-  },
-  "dependencies": {
-    "astro": "^4.16.11",
-    "@astrojs/check": "^0.9.4",
-    "typescript": "^5.6.3"
-  }
+	"name": "jdjemba-me",
+	"type": "module",
+	"version": "0.0.1",
+	"scripts": {
+		"dev": "astro dev",
+		"start": "astro dev",
+		"build": "astro check && astro build",
+		"preview": "astro preview",
+		"astro": "astro",
+		"lint": "eslint .",
+		"format": "prettier --write ."
+	},
+	"imports": {
+		"#assets/*": "./src/assets/*",
+		"#components/*": "./src/components/*.astro",
+		"#layouts/*": "./src/layouts/*.astro",
+		"#styles/*": "./src/styles/*.css"
+	},
+	"dependencies": {
+		"@astrojs/check": "^0.9.4",
+		"astro": "^4.16.11"
+	},
+	"devDependencies": {
+		"@typescript-eslint/eslint-plugin": "^8.14.0",
+		"@typescript-eslint/parser": "^8.14.0",
+		"eslint": "^9.14.0",
+		"eslint-plugin-astro": "^1.3.1",
+		"eslint-plugin-jsx-a11y": "^6.10.2",
+		"eslint-plugin-perfectionist": "^3.9.1",
+		"prettier": "^3.3.3",
+		"prettier-plugin-astro": "^0.14.1",
+		"typescript": "^5.6.3"
+	}
 }

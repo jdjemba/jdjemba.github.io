@@ -1,0 +1,12 @@
+# Dependencies
+**/node_modules
+
+# Directories
+.astro
+.changeset
+.github
+.vscode
+**/dist
+
+# Files
+pnpm-lock.yaml
